@@ -6,9 +6,19 @@
     debug:
       msg: "hellow from PLAY -1 and Task -1"
 
-  - name: 
+  - name: "PLAY -1 and Task -2"
     debug:
       msg: "hellow from PLAY -1 and Task -2"
 
 
-  
+- name: PLAY -2
+  hosts: local
+  connection: local
+  tasks:
+  - name: PLAY -2 and Task -1
+    debug:
+      msg: "hellow from PLAY -2 and Task -1"
+
+  - name: "PLAY -2 and Task -2"
+    debug:
+      msg: "hellow from PLAY -2 and Task -2"
