@@ -4,6 +4,6 @@
   vars:
     property: 100 acers
   tasks:
--  name: print the vars
-   debug: 
+  - name: print the vars
+    debug: 
     msg: "I got property of {{property}} from my father"
