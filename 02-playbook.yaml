@@ -8,5 +8,5 @@
   
     - name: print the own message
       debug:
-        msg: "To print we will msg module in ansible like echo in Linux"
+        msg: "To print in ansible we have msg module like echo in Linux"
 
