@@ -6,4 +6,4 @@
   tasks:
   - name: print the vars
     debug: 
-    msg: "I got property of {{property}} from my father"
+      msg: "I got property of {{property}} from my father"
