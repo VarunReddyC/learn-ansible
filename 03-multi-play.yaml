@@ -1,0 +1,14 @@
+- name: PLAY -1
+  hosts: local
+  connection: local
+  tasks:
+  - name: PLAY -1 and Task -1
+    debug:
+      msg: "hellow from PLAY -1 and Task -1"
+
+  - name: 
+    debug:
+      msg: "hellow from PLAY -1 and Task -2"
+
+
+  
