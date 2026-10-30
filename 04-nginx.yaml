@@ -7,3 +7,8 @@
       name: nginx
       state: present
     
+  - name: start and enable the nginx
+    service:
+      name: nginx
+      state: started
+      enabled: yes 
