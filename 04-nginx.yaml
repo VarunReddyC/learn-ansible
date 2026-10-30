@@ -1,5 +1,6 @@
 - name: install and start nginx 
   hosts: frontend
+  become: yest # providing sudo access
   tasks:
   - name: install ansible module 
     package: 
