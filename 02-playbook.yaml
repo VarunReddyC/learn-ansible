@@ -3,5 +3,10 @@
   connection: local
   tasks:
     - name: print hellow world
-      ansible.builtin.debug:
+      ansible.builtin.debug:  #if we leve like this it will print hellow world by default if we need to give any message then we need to use msg module 
       
+      tasks:
+      - name: print the own message
+        debug:
+          msg: "Priting with msg module"
+
