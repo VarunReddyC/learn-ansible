@@ -27,7 +27,7 @@
     prompt: please enter your username
     private: false
 
-    tasks:
-    - name: print the values 
-      debug:
-        msg: "you enter username with myusernmae variable is {{myusernmae}}"
+  tasks:
+  - name: print the values 
+    debug:
+       msg: "you enter username with myusernmae variable is {{myusernmae}}"
