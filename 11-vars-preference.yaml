@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    course: "ansible FROM PLAY"
+    course: "ansible from inventory"
   vars_prompt:
   - name: course
     prompt: Please enter your course
