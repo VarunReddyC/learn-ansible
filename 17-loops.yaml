@@ -12,6 +12,6 @@
   tasks:
   - name: install packages
     packages:
-      name: "{{item}}"
+      name: "{{ item }}"
       state: present
-    loop: packages 
+    loop: "{{ packages }}" 
