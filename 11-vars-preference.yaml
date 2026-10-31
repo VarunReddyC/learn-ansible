@@ -3,10 +3,10 @@
   connection: local
   vars:
     course: "ansible from inventory"
-  vars_prompt:
-  - name: course
-    prompt: Please enter your course
-    private: false
+  # vars_prompt:
+  # - name: course
+  #   prompt: Please enter your course
+  #   private: false
   # vars_files: 
   #   course.yaml
   tasks:
@@ -19,3 +19,4 @@
   # 1. CMD 
   # 2. Task 
   # 3. file 
+  # 4. prompt 
