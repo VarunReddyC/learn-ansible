@@ -3,7 +3,7 @@
   connection: local
   become: yes
   vars:
-    package:
+    packages:
     - nginx
     - mysql
     - git 
@@ -11,7 +11,7 @@
     - htop
   tasks:
   - name: install packages
-    package:
+    packages:
       name: "{{item}}"
       state: present
-    loop: "{{package}}} 
+    loop: packages 
