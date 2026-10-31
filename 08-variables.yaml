@@ -19,15 +19,19 @@
 
   # for variables testing and keyworkds identification purpose I am changind some details below see how it will work 
 
-- name: my owen name variables from prompt
+- name: Trying with different name on variables declaration from prompt
   hosts: local
   connection: local
   vars_prompt:
   - name: myusernmae
-    prompt: please enter your username
+    prompt: please enter myusernmae
     private: false
+ 
+  - name: mypasswrod
+    prompt: please enter mypasswrod
+    private: true
 
   tasks:
   - name: print the values 
     debug:
-       msg: "you enter username with myusernmae variable is {{myusernmae}}"
+       msg: "My username is {{myusernmae}} and mypasswrod is {{mypasswrod}}"
