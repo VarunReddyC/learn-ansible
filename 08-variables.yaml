@@ -14,3 +14,20 @@
   - name: print the confidential informatin
     debug:
       msg:  "username is {{username}} , password is {{password}}"
+
+
+
+  # for variables testing and keyworkds identification purpose I am changind some details below see how it will work 
+
+- name: my owen name variables from prompt
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: myusernmae
+    prompt: please enter your username
+    private: false
+
+    tasks:
+    - name: print the values 
+      debug:
+        msg: "you enter username with myusernmae variable is {{myusernmae}}"
