@@ -14,5 +14,4 @@
     packages:
       name: "{{item}}"
       state: present
-      enable: yes
-      loop: packages 
+    loop: packages 
