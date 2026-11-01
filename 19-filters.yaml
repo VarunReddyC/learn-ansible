@@ -7,6 +7,7 @@
     - Varunkumar
     - Reddy
     - C
+    topic: ANIBLE 
   tasks:
   - name: print the name 
     debug:
@@ -19,4 +20,6 @@
   - name: convert list to string 
     debug: 
       msg: "Full Name: {{ names | join (' ')}}"
-      
+  - name: convert string to lower case
+    debug: 
+     msg: "Lower Case Topic: {{ topic | lower }}"
