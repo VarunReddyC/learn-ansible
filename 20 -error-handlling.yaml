@@ -1,0 +1,13 @@
+- name: create username
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: check roboshop user exist or not 
+    command:  id roboshop # linux command, when thee is no ansible module exist 
+    register: user_output
+    ignore_errors: true
+
+  - name: print the output 
+    debug:
+      msg: "{{ user_output }}"
