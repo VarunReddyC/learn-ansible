@@ -10,4 +10,4 @@
 
   - name: converst string to list 
     debug:
-      msg: "Topics are: {{ topics | split(',')}}"
+      msg: "Topics are: {{ split(',') | topics }}"
