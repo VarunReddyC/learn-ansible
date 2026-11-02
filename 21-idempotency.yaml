@@ -4,6 +4,6 @@
   become: yes
   tasks: 
   - name: create user 
-    user:
+    user:  # search for ansible module for create user and it gave user is a module is used to create user one line code it will handle all other details 
       name: roboshop  # user add roboshop
-      
+       
