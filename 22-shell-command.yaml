@@ -3,9 +3,10 @@
   connection: local
   tasks:
   - name: test the command module
-    command: cat /etc/passwed | grep ec2-user
+    # command: cat /etc/passwed | grep ec2-user
+    shell: cat /etc/passwed | grep ec2-user
     register: ec2_user_output
 
   - name: print the output
     debug:
-        msg: "{{ ec2_user_output }}"
+        msg: "{{ ec2_user_output }}"  # we got error when we use command module failed because we are using | we need to use shll module it should work 
