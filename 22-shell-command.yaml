@@ -3,10 +3,18 @@
   connection: local
   tasks:
   - name: test the command module
-    command: cat /etc/passwd | grep ec2-user
-    # shell: cat /etc/passwd | grep ec2-user
+    # command: cat /etc/passwd | grep ec2-user
+    shell: cat /etc/passwd | grep ec2-user
     register: ec2_user_output
 
   - name: print the output
     debug:
         msg: "{{ ec2_user_output }}"  # we got error when we use command module failed because we are using | we need to use shll module it should work 
+  
+  - name: get the files
+    command: ls -la > /tmp/filex.txt
+    register: files_output
+
+  - name: print file 
+    debug:
+      msg: "{{ files_output }}"
